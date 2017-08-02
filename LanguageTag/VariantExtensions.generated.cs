@@ -183,7 +183,7 @@ namespace AbbyyLS.Globalization.Bcp47
 			if(text == null)
 				return null;
 
-			switch (text.ToLower(CultureInfo.InvariantCulture))
+			switch (text.ToLowerInvariant())
 			{
 				case "1606nict": return Variant.V1606nict;
 				case "1694acad": return Variant.V1694acad;

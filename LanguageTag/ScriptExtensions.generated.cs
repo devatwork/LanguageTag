@@ -203,7 +203,7 @@ namespace AbbyyLS.Globalization.Bcp47
 			if(text == null)
 				return null;
 
-			switch (text.ToLower(CultureInfo.InvariantCulture))
+			switch (text.ToLowerInvariant())
 			{
 				case "adlm": return Script.Adlm;
 				case "afak": return Script.Afak;

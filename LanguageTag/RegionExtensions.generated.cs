@@ -317,7 +317,7 @@ namespace AbbyyLS.Globalization.Bcp47
 			if(text == null)
 				return null;
 
-			switch (text.ToLower(CultureInfo.InvariantCulture))
+			switch (text.ToLowerInvariant())
 			{
 				case "aa": return Region.AA;
 				case "ac": return Region.AC;

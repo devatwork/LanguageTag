@@ -1,5 +1,4 @@
 using System;
-using System.Globalization;
 
 namespace AbbyyLS.Globalization.Bcp47
 {
@@ -282,7 +281,7 @@ namespace AbbyyLS.Globalization.Bcp47
 			switch(prefix)
 			{
 				case Language.AR:
-					switch (text.ToLower(CultureInfo.InvariantCulture))
+					switch (text.ToLowerInvariant())
 					{
 						case "aao": return Language.AAO;
 						case "abh": return Language.ABH;
@@ -317,7 +316,7 @@ namespace AbbyyLS.Globalization.Bcp47
 						default: return null;
 					}
 				case Language.SGN:
-					switch (text.ToLower(CultureInfo.InvariantCulture))
+					switch (text.ToLowerInvariant())
 					{
 						case "ads": return Language.ADS;
 						case "aed": return Language.AED;
@@ -466,7 +465,7 @@ namespace AbbyyLS.Globalization.Bcp47
 						default: return null;
 					}
 				case Language.MS:
-					switch (text.ToLower(CultureInfo.InvariantCulture))
+					switch (text.ToLowerInvariant())
 					{
 						case "bjn": return Language.BJN;
 						case "btj": return Language.BTJ;
@@ -506,7 +505,7 @@ namespace AbbyyLS.Globalization.Bcp47
 						default: return null;
 					}
 				case Language.ZH:
-					switch (text.ToLower(CultureInfo.InvariantCulture))
+					switch (text.ToLowerInvariant())
 					{
 						case "cdo": return Language.CDO;
 						case "cjy": return Language.CJY;
@@ -525,28 +524,28 @@ namespace AbbyyLS.Globalization.Bcp47
 						default: return null;
 					}
 				case Language.KOK:
-					switch (text.ToLower(CultureInfo.InvariantCulture))
+					switch (text.ToLowerInvariant())
 					{
 						case "gom": return Language.GOM;
 						case "knn": return Language.KNN;
 						default: return null;
 					}
 				case Language.LV:
-					switch (text.ToLower(CultureInfo.InvariantCulture))
+					switch (text.ToLowerInvariant())
 					{
 						case "ltg": return Language.LTG;
 						case "lvs": return Language.LVS;
 						default: return null;
 					}
 				case Language.SW:
-					switch (text.ToLower(CultureInfo.InvariantCulture))
+					switch (text.ToLowerInvariant())
 					{
 						case "swc": return Language.SWC;
 						case "swh": return Language.SWH;
 						default: return null;
 					}
 				case Language.UZ:
-					switch (text.ToLower(CultureInfo.InvariantCulture))
+					switch (text.ToLowerInvariant())
 					{
 						case "uzn": return Language.UZN;
 						case "uzs": return Language.UZS;

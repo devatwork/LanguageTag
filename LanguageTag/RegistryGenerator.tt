@@ -64,7 +64,7 @@ namespace AbbyyLS.Globalization.Bcp47
 <#foreach(var lang in extlangs.Select(_ => _.Prefix.First()).Distinct())
 { #>
 				case Language.<#= lang.ToUpper() #>:
-					switch (text.ToLower(CultureInfo.InvariantCulture))
+					switch (text.ToLowerInvariant())
 					{
 <#foreach(var entry in extlangs.Where(_ => _.Prefix.First() == lang && _.PreferredValue != null))
 { #>
@@ -199,7 +199,7 @@ namespace AbbyyLS.Globalization.Bcp47
 			if(text == null)
 				return null;
 
-			switch (text.ToLower(CultureInfo.InvariantCulture))
+			switch (text.ToLowerInvariant())
 			{
 <#foreach(var entry in prlangs)
 { #>
@@ -265,7 +265,7 @@ namespace AbbyyLS.Globalization.Bcp47
 			if(text == null)
 				return null;
 
-			switch (text.ToLower(CultureInfo.InvariantCulture))
+			switch (text.ToLowerInvariant())
 			{
 <#foreach(var entry in regions)
 { #>
@@ -332,7 +332,7 @@ namespace AbbyyLS.Globalization.Bcp47
 			if(text == null)
 				return null;
 
-			switch (text.ToLower(CultureInfo.InvariantCulture))
+			switch (text.ToLowerInvariant())
 			{
 <#foreach(var entry in scripts)
 { #>
@@ -412,7 +412,7 @@ namespace AbbyyLS.Globalization.Bcp47
 			if(text == null)
 				return null;
 
-			switch (text.ToLower(CultureInfo.InvariantCulture))
+			switch (text.ToLowerInvariant())
 			{
 <#foreach(var entry in variants)
 { #>
