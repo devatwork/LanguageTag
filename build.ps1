@@ -5,3 +5,7 @@ $msbuildExe = (Get-ItemProperty "HKLM:\software\Microsoft\MSBuild\ToolsVersions\
 & "$mainFolder\.paket\paket.bootstrapper.exe"
 & "$mainFolder\.paket\paket.exe" restore
 & "$msbuildExe" /target:"Clean;Build" /p:RestorePackages=false /p:Configuration=Release /p:Platform="Any CPU" "$mainFolder\LanguageTag.sln"
+
+& "dotnet" clean .\LanguageTag.NetStandard\
+& "dotnet" restore .\LanguageTag.NetStandard\
+& "dotnet" build -c Release .\LanguageTag.NetStandard\

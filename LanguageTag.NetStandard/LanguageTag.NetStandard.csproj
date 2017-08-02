@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.2</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.2\AbbyyLS.LanguageTag.NetStandard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.2\AbbyyLS.LanguageTag.NetStandard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+  	<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  	<Product>AbbyyLS.LanguageTag.NetStandard</Product>
+  	<Description>Language tags are used to help identify languages, whether spoken, written, signed, or otherwise signaled, for the purpose of communication. Language tag syntax is defined by the IETF's BCP 47 (https://tools.ietf.org/html/bcp47)</Description>
+  	<Company>ABBYY Language Services</Company>
+  	<Copyright>Copyright © 2015 Anatoliy Koperin &lt;a.koperin@gmail.com&gt;</Copyright>
+  	<Authors>Anatoliy Koperin</Authors>
+  	<Version>1.3.1.0</Version>
+  	<AssemblyName>AbbyyLS.LanguageTag.NetStandard</AssemblyName>
+  	<RootNamespace>AbbyyLS.Globalization.Bcp47</RootNamespace>
+  	<PackageId>AbbyyLS.LanguageTag.NetStandard</PackageId>
+  	<AssemblyVersion>1.3.1.0</AssemblyVersion>
+  	<FileVersion>1.3.1.0</FileVersion>
+  	<PackageProjectUrl>https://github.com/ExM/LanguageTag</PackageProjectUrl>
+  	<PackageLicenseUrl>https://github.com/ExM/LanguageTag/raw/master/LICENSE</PackageLicenseUrl>
+  	<PackageTags>bcp47 languagetag iso639</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../LanguageTag/**/*.cs" Exclude="../LanguageTag/Properties/**/*.cs" />
+  </ItemGroup>
+
+</Project>
